@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="vi"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nhóm 05 - Đặt phòng học nhóm</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f5fa;
+            color: #263247;
+        }
+
+        .header {
+            background: #174a8b;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 50px 25px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px
+            rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #174a8b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #174a8b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #777;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h2>GROUP 05 - STUDY ROOM BOOKING</h2>
+</header>
+
+<main class="container">
+
+    <h1 th:text="${title}">
+        Hệ thống quản lý đặt phòng học nhóm
+    </h1>
+
+    <p th:text="${message}">
+        Chào mừng bạn đến với website Nhóm 05!
+    </p>
+
+    <p>
+        Hệ thống hỗ trợ sinh viên tìm kiếm,
+        kiểm tra lịch trống và đặt phòng học nhóm
+        trong trường đại học.
+    </p>
+
+    <a href="#" class="button">
+        Khám phá hệ thống
+    </a>
+
+</main>
+
+<footer class="footer">
+    <p>Đề tài Nhóm 05 - Hệ thống quản lý đặt phòng học nhóm</p>
+</footer>
+
+</body>
+</html>
